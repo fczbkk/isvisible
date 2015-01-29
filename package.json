@@ -15,14 +15,13 @@
   "homepage": "https://github.com/fczbkk/isvisible",
   "devDependencies": {
     "grunt": "*",
+    "grunt-bump": "*",
     "grunt-coffeelint": "*",
+    "grunt-contrib-coffee": "*",
+    "grunt-contrib-jasmine": "*",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-watch": "*",
-    "grunt-contrib-jasmine": "*",
-    "grunt-contrib-coffee": "*",
-    "grunt-bump": "*",
     "grunt-conventional-changelog": "*",
-    
     "load-grunt-tasks": "*"
   }
 }

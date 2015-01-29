@@ -36,11 +36,16 @@ module.exports = (grunt) ->
           'test/spec/<%= pkg.name %>.spec.js' : 'test/src/*.coffee'
 
     uglify:
-      default:
+      options:
+        banner: "<%= banner %>"
+      standard:
         options:
-          banner: "<%= banner %>"
-        files:
-          'build/<%= pkg.name %>.min.js' : 'build/<%= pkg.name %>.js'
+          mangle: false
+          compress: false
+          beautify: true
+        files: 'lib/<%= pkg.name %>.js' : 'build/<%= pkg.name %>.js'
+      min:
+        files: 'lib/<%= pkg.name %>.min.js' : 'build/<%= pkg.name %>.js'
 
     watch:
       options:
@@ -85,6 +90,7 @@ module.exports = (grunt) ->
     grunt.task.run [
       "bump-only:#{version_type}"
       'dev'
+      'uglify'
       'changelog'
       'bump-commit'
     ]
