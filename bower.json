@@ -1,0 +1,21 @@
+{
+  "name": "isvisible",
+  "version": "0.1.0",
+  "homepage": "https://github.com/fczbkk/isvisible",
+  "author": "Riki Fridrich <riki@fczbkk.com> (https://github.com/fczbkk)",
+  "description": "Cross-browser function that checks if an element is visible.",
+  "main": "build/isvisible.js",
+  "license": "ULICENSE",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "src",
+    "doc",
+    "Gruntfile.coffee",
+    ".DS_Store",
+    "bower.json",
+    "package.json"
+  ]
+}

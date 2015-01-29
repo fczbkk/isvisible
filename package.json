@@ -1,0 +1,28 @@
+{
+  "title": "isVisible",
+  "name": "isvisible",
+  "version": "0.1.0",
+  "description": "Cross-browser function that checks if an element is visible.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fczbkk/isvisible.git"
+  },
+  "author": "Riki Fridrich <riki@fczbkk.com> (https://github.com/fczbkk)",
+  "license": "UNLICENSE",
+  "bugs": {
+    "url": "https://github.com/fczbkk/isvisible/issues"
+  },
+  "homepage": "https://github.com/fczbkk/isvisible",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-coffeelint": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-jasmine": "*",
+    "grunt-contrib-coffee": "*",
+    "grunt-bump": "*",
+    "grunt-conventional-changelog": "*",
+    
+    "load-grunt-tasks": "*"
+  }
+}
