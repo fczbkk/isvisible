@@ -25,7 +25,7 @@ checkVisibility = (element) ->
 isVisible = (element) ->
 
   # don't even bother checking elements that do not exist or are not in BODY
-  unless document.body.contains element
+  unless document.body?.contains element
     return false
 
   # test visibility recursively for element and all its parents, until BODY
