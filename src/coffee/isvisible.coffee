@@ -36,6 +36,17 @@ isVisible = (element) ->
 
   true
 
+isVisible.all = (list) ->
+  for item in list
+    return false unless @ item
+  true
+
+
+isVisible.any = (list) ->
+  for item in list
+    return true if @ item
+  false
+
 
 # export to global namespace
 window.isVisible = isVisible
