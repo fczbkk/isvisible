@@ -1,6 +1,6 @@
 {
   "name": "isvisible",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "homepage": "https://github.com/fczbkk/isvisible",
   "author": "Riki Fridrich <riki@fczbkk.com> (https://github.com/fczbkk)",
   "description": "Cross-browser function that checks if an element is visible.",

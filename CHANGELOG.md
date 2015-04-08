@@ -1,3 +1,12 @@
+<a name="1.1.0"></a>
+## 1.1.0 (2015-04-08)
+
+
+#### Features
+
+* add `isVisible.all()` and `isVisible.any()` methods ([0b71ce3f](https://github.com/fczbkk/isvisible/commit/0b71ce3f49024727acb08b12a1334de4dc0966e5))
+
+
 <a name="1.0.1"></a>
 ### 1.0.1 (2015-02-11)
 
