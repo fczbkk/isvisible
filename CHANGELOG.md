@@ -1,3 +1,12 @@
+<a name="1.2.0"></a>
+## 1.2.0 (2015-06-26)
+
+
+#### Features
+
+* add support for `expose` ([5a1b834d](https://github.com/fczbkk/isvisible/commit/5a1b834d50cb67d581b88a5f094ccef3667f2246))
+
+
 <a name="1.1.0"></a>
 ## 1.1.0 (2015-04-08)
 
