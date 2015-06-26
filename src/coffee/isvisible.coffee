@@ -49,4 +49,7 @@ isVisible.any = (list) ->
 
 
 # export to global namespace
-window.isVisible = isVisible
+if expose?
+  expose isVisible, 'isVisible'
+else
+  window.isVisible = isVisible

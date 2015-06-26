@@ -22,7 +22,10 @@ module.exports = (grunt) ->
 
     jasmine:
       default:
-        src: ['build/*.js', '!build/*.min.js']
+        src: [
+          'bower_components/expose/lib/expose.js'
+          'build/*.js'
+        ]
         options:
           keepRunner: false
           specs: 'test/spec/<%= pkg.name %>.spec.js'

@@ -17,5 +17,8 @@
     ".DS_Store",
     "bower.json",
     "package.json"
-  ]
+  ],
+  "devDependencies": {
+    "expose": "git@github.com:fczbkk/expose.git#~0.1.0"
+  }
 }
