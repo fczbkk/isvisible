@@ -55,10 +55,10 @@ module.exports = (grunt) ->
         atBegin: true
       src:
         files: ['src/coffee/*.coffee']
-        tasks: ['coffeelint:src', 'coffee:src', 'jasmine']
+        tasks: ['coffeelint:src', 'coffee:src', 'karma:default:run']
       test:
         files: ['test/src/*.coffee']
-        tasks: ['coffeelint:test', 'coffee:test', 'jasmine']
+        tasks: ['coffeelint:test', 'coffee:test', 'karma:default:run']
 
 
     bump:
@@ -72,8 +72,16 @@ module.exports = (grunt) ->
         pushTo: 'origin'
 
 
-  changelog:
-    options: {}
+    karma:
+      default:
+        configFile: './karma.conf.coffee'
+        singleRun: false
+        background: true
+        autoWatch: false
+
+
+    changelog:
+      options: {}
 
 
   grunt.registerTask 'dev', [
@@ -98,5 +106,6 @@ module.exports = (grunt) ->
 
 
   grunt.registerTask 'default', [
+    'karma:default:start'
     'watch'
   ]
