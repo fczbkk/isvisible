@@ -24,6 +24,10 @@ checkVisibility = (element) ->
 # this should be as universal and cross-browser compatible as possible up to IE8
 isVisible = (element) ->
 
+  # don't even bother with wrong types
+  unless typeof element is 'object'
+    return false
+
   # don't even bother checking elements that do not exist or are not in BODY
   unless document.body?.contains element
     return false
@@ -35,6 +39,7 @@ isVisible = (element) ->
     element = element.parentNode
 
   true
+
 
 isVisible.all = (list) ->
   for item in list
