@@ -21,11 +21,11 @@ It's that simple. Just one function with one parameter. The parameter should be 
 
 These methods make it easy to apply the visibility check on array or collection of elements:
 
-### isVisible.all(list)
+### isVisibleAll(list)
 
 Returns `true` if all elements in the list are visible. Returns `false` if at least one element in the list is not visible. Also returns `false` if the argument is not a list (array or collection) or if any item in the list is not an element.
 
-### isVisible.any(list)
+### isVisibleAny(list)
 
 Returns `true` if at least one of the elements in the list is visible. Returns `false` if none of the elements in the list is visible. Also returns `false` if the argument is not a list (array or collection) or if any item in the list is not an element.
 
@@ -35,4 +35,4 @@ If you found any bugs, if you have feature requests or any questions, please, ei
 
 ## License
 
-isVisible is published under the [UNLICENSE license](https://github.com/fczbkk/isvisible/blob/master/UNLICENSE). Feel free to use it in any way.
+isVisible is published under the [MIT license](https://github.com/fczbkk/isvisible/blob/master/LICENSE). Feel free to use it in any way.
