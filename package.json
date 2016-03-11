@@ -1,6 +1,6 @@
 {
   "title": "isVisible",
-  "name": "isvisible",
+  "name": "is-visible",
   "version": "2.0.0",
   "description": "Cross-browser function that checks if an element is visible.",
   "repository": {
