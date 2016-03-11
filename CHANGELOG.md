@@ -1,3 +1,9 @@
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/fczbkk/isvisible/compare/v1.3.0...v2.0.0) (2016-03-11)
+
+
+
+
 <a name="1.2.0"></a>
 ## 1.2.0 (2015-06-26)
 
