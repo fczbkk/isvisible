@@ -1,11 +1,11 @@
 import isElement from 'iselement';
+import {getStyleProperty} from 'style-properties';
 
 
 // cross-browser way of getting element's style property
 function getStyle (element, property) {
   if (window.getComputedStyle) {
-    const computed_style = document.defaultView.getComputedStyle(element, null);
-    return computed_style.getPropertyValue(property);
+    return getStyleProperty(element, property).original;
   } else if (element.currentStyle) {
     return element.currentStyle[property];
   }

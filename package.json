@@ -41,6 +41,7 @@
     "webpack": "^1.12.14"
   },
   "dependencies": {
-    "iselement": "^1.0.0"
+    "iselement": "^1.0.0",
+    "style-properties": "^1.1.0"
   }
 }
