@@ -1,3 +1,8 @@
+<a name="2.0.3"></a>
+## [2.0.3](https://github.com/fczbkk/isvisible/compare/v2.0.2...v2.0.3) (2016-06-07)
+
+
+
 <a name="2.0.1"></a>
 ## [2.0.1](https://github.com/fczbkk/isvisible/compare/v2.0.0...v2.0.1) (2016-03-11)
 
