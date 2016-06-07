@@ -27,13 +27,20 @@ export function isVisible (element) {
     return false;
   }
 
+  // This should prevent problems with ShadowDOMPolyfill. It returns different
+  // object when asking directly via `document.body` (native element) and when
+  // asking via `document.querySelector()` (wrapped element). This would result
+  // in traversing too far in the `while` cycle below.
+  const body_element = document.querySelector('body');
+  const html_element = document.querySelector('html');
+
   // elements that are not inserted into the body are never visible
-  if (!document.body || !document.body.contains(element)) {
+  if (!body_element || !body_element.contains(element)) {
     return false;
   }
 
   // test visibility recursively for element and all its parents, until BODY
-  while (element && (element !== document.body)) {
+  while (element && (element !== body_element) && (element !== html_element)) {
     if (!checkVisibility(element)) {
       return false;
     }

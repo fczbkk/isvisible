@@ -42,6 +42,6 @@
   },
   "dependencies": {
     "iselement": "^1.0.0",
-    "style-properties": "^1.2.0"
+    "style-properties": "^1.2.1"
   }
 }
