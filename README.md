@@ -29,6 +29,8 @@ Returns `true` if all elements in the list are visible. Returns `false` if at le
 
 Returns `true` if at least one of the elements in the list is visible. Returns `false` if none of the elements in the list is visible. Also returns `false` if the argument is not a list (array or collection) or if any item in the list is not an element.
 
+## Documentation
+
 ## Bug reports, feature requests and contact
 
 If you found any bugs, if you have feature requests or any questions, please, either [file an issue at GitHub](https://github.com/fczbkk/isvisible/issues) or send me an e-mail at [riki@fczbkk.com](mailto:riki@fczbkk.com).
