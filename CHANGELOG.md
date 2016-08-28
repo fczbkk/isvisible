@@ -1,3 +1,13 @@
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/fczbkk/isvisible/compare/v2.0.4...v2.1.0) (2016-08-28)
+
+
+### Features
+
+* split library and module ([4c2328a](https://github.com/fczbkk/isvisible/commit/4c2328a))
+
+
+
 <a name="2.0.4"></a>
 ## [2.0.4](https://github.com/fczbkk/isvisible/compare/v2.0.3...v2.0.4) (2016-06-07)
 
