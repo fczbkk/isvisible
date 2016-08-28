@@ -1,7 +1,7 @@
 .DS_Store
-bower_components
-node_modules
-build
-test/spec
-.idea
-/npm-debug.log
+npm-debug.log
+/node_modules/
+/temp/
+/.idea/
+/lib/
+/module/

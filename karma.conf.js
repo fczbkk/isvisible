@@ -1,4 +1,4 @@
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
     basePath: '',
     frameworks: ['jasmine'],
@@ -6,8 +6,12 @@ module.exports = function(config) {
     preprocessors: {'test/**/*.spec.js': ['webpack']},
     webpack: webpack_config,
     webpackMiddleware: {noInfo: true},
-    reporters: ['mocha'],
+    reporters: ['coverage', 'mocha'],
     mochaReporter: {output: 'minimal'},
+    coverageReporter: {
+      type: 'html',
+      dir: 'temp/coverage'
+    },
     browsers: ['PhantomJS'],
     singleRun: true
   });
@@ -18,7 +22,7 @@ var webpack_config = {
     loaders: [
       {
         test: /\.js$/,
-        loaders: ['babel-loader']
+        loaders: ['babel-loader', 'eslint-loader']
       }
     ]
   }
