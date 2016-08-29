@@ -1,7 +1,8 @@
-.DS_Store
-npm-debug.log
-/node_modules/
-/temp/
 /.idea/
+/node_modules/
 /lib/
 /module/
+npm-debug.log
+npm-debug.log.*
+/temp/
+.DS_store

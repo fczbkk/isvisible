@@ -1,0 +1,10 @@
+/.idea/
+/temp/
+/src/
+/test/
+/assets/
+.babelrc
+.eslintrc.json
+*.yml
+karma.*.js
+webpack.*.js
