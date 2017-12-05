@@ -1,3 +1,13 @@
+<a name="2.1.2"></a>
+## [2.1.2](https://github.com/fczbkk/isvisible/compare/v2.1.1...v2.1.2) (2017-12-05)
+
+
+### Bug Fixes
+
+* visible element in hidden parent ([81af687](https://github.com/fczbkk/isvisible/commit/81af687))
+
+
+
 <a name="2.1.1"></a>
 ## [2.1.1](https://github.com/fczbkk/isvisible/compare/v2.1.0...v2.1.1) (2016-08-29)
 
