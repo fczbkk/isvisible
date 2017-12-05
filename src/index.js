@@ -13,14 +13,6 @@ function getStyle (element, property) {
 }
 
 
-function checkVisibility (element) {
-  const is_displayed = getStyle(element, 'display') !== 'none';
-  const is_visible = getStyle(element, 'visibility') !== 'hidden';
-
-  return is_displayed && is_visible;
-}
-
-
 export function isVisible (element) {
   // don't bother with non-element inputs
   if (!isElement(element)) {
@@ -39,9 +31,14 @@ export function isVisible (element) {
     return false;
   }
 
-  // test visibility recursively for element and all its parents, until BODY
+  // invisible elements
+  if (getStyle(element, 'visibility') === 'hidden') {
+    return false;
+  }
+
+  // test display property recursively for element and all its parents, until BODY
   while (element && (element !== body_element) && (element !== html_element)) {
-    if (!checkVisibility(element)) {
+    if (getStyle(element, 'display') === 'none') {
       return false;
     }
     element = element.parentNode;

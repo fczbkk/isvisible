@@ -12,7 +12,10 @@ module.exports = function (config) {
       type: 'html',
       dir: 'temp/coverage'
     },
-    browsers: ['PhantomJS'],
+    browsers: [
+      // 'PhantomJS',
+      'ChromeHeadless'
+    ],
     singleRun: true
   });
 };
