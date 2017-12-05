@@ -1,8 +1,10 @@
+const path = require('path');
+
 module.exports = {
-  entry: './src/index.js',
+  entry: path.resolve(__dirname, './src/index.js'),
   output: {
     filename: 'index.js',
-    path: './lib/',
+    path: path.resolve(__dirname, './lib/'),
     library: 'isVisible',
     libraryTarget: 'umd'
   },
