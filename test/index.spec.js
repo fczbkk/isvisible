@@ -40,6 +40,11 @@ describe('isVisible', function() {
     expect(isVisible(elm)).toEqual(false);
   });
 
+  it('should say element with 0 opacity is not visible', function() {
+    elm.style.opacity = 0;
+    expect(isVisible(elm)).toEqual(false);
+  });
+
   it('should say visible element in hidden parent is visible', function () {
     const child = elm.appendChild(document.createElement('div'));
     elm.style.visibility = 'hidden';
@@ -64,6 +69,12 @@ describe('isVisible', function() {
   it('should say child element of hidden element is not visible', function() {
     const sub_elm = elm.appendChild(document.createElement('div'));
     elm.style.display = 'none';
+    expect(isVisible(sub_elm)).toEqual(false);
+  });
+
+  it('should say child element of an element with 0 opacity is not visible', function() {
+    const sub_elm = elm.appendChild(document.createElement('div'));
+    elm.style.opacity = 0;
     expect(isVisible(sub_elm)).toEqual(false);
   });
 
