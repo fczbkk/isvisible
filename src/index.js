@@ -41,6 +41,9 @@ export function isVisible (element) {
     if (getStyle(element, 'display') === 'none') {
       return false;
     }
+    if (getStyle(element, 'opacity').toString() === '0') {
+      return false;
+    }
     element = element.parentNode;
   }
 
