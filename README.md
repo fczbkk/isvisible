@@ -16,6 +16,7 @@ It's that simple. Just one function with one parameter. The parameter should be 
 -   element is not in document
 -   element or any of it's parents is not displayed (`display: none`)
 -   element or any of it's parents is not visible (`visibility: hidden`)
+-   element has zero opacity (`opacity: 0`)
 
 ## Element lists and collections
 
