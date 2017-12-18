@@ -13,14 +13,13 @@ module.exports = function (config) {
       dir: 'temp/coverage'
     },
     browsers: [
-      // 'PhantomJS',
       'ChromeHeadless'
     ],
     singleRun: true
   });
 };
 
-var webpack_config = {
+const webpack_config = {
   module: {
     loaders: [
       {
